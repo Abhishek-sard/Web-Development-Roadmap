@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: black;
+}
+
+h1{
+    background-color: red;
+    font-size: large;
+    align-items: center;
+}h2{
+    font-size: large;
+    margin-top: 120px;
+    align-items: center;
+    background-color: blue;
+    color: white;
+}
+h5{
+    background-color: green;
+}
+
+.container{
+    margin-top: 12px;
+    background-color: yellow;
+}
+#body{
+    margin-top: 12px;
+    background-color: violet;
+}
+
+h6, h2{
+    background-color: orange;
+}
+
+div{
+    background-image: url(download.jpg);
+}
+
+div{
+    background-image: url(download.jpg);
+}

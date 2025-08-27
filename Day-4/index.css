@@ -1,0 +1,49 @@
+h4{
+    color: red;
+    background-color: yellow;
+}
+*{
+    background-color: gray;
+    color: yellow;
+}
+
+h6{
+    color: chocolate;
+}
+
+.project{
+    color: red;
+     background-color: aqua;
+}
+#about{
+    color:blue;
+}
+
+h1, h2, h3, h4, h5, h6{
+    color: green;
+}
+
+div{
+    background-image: url(download.jpg);
+}
+
+
+
+img{
+    width: 50%;
+    height: 50%;
+    margin-top: 34px;
+    padding: 34px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.water{
+    text-align:center;
+}
+.milk{
+    text-decoration: underline;
+    text-transform: uppercase;
+    font-family:sans-serif;
+    font-style: italic;
+    font-weight: bold;
+}
