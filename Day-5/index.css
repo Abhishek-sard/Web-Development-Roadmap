@@ -1,0 +1,32 @@
+.box{
+    width: 200px;
+    height: 200px;
+    border: 20px solid red;
+    padding: 40px 30px 20px 10px;
+    margin: 40px 40px;
+}
+ul{
+    list-style-type: square;
+    background: #f4f4f4;
+    padding: 15px;
+    border-radius: 8px;
+}
+ul li{
+    margin: 8px 0;
+    color: darkblue;
+    font-size: 18px;
+}
+
+
+    ol {
+      list-style-type: upper-roman;  /* decimal | lower-alpha | upper-roman | lower-greek */
+      background: #eaeaea;
+      padding: 15px;
+      border-left: 4px solid #333;
+    }
+
+    ol li {
+      margin: 5px 0;
+      color: darkgreen;
+      font-weight: bold;
+    }

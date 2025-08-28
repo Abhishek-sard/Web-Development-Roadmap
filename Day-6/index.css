@@ -1,0 +1,47 @@
+.project{
+    width: 20px;
+    height: 40px;
+    padding: 40px 30px 20px 10px;
+    border: 50px solid red;
+    margin: 20px 30px 40px 50px;
+}
+.bag{
+     width: 20px;
+    height: 40px;
+    padding: 40px 30px 20px 10px;
+    border: 50px solid red;
+    margin: 20px 30px 40px 50px;
+
+}
+
+
+h2{
+    color: red;
+    background-color: blue;
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+
+}
+ol li{
+    color: green;
+    font-size: 18px;
+    font-weight: normal;
+    text-align: left;
+
+}
+
+h1{
+    color: red;
+    background-color: blue;
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+}
+ul li{
+    color: green;
+    font-size: 18px;
+    font-weight: normal;
+    text-align: left;
+    display: flex;
+}
