@@ -58,11 +58,19 @@
     function login() {
       let user = document.getElementById("username").value;
       let pass = document.getElementById("password").value;
+      //set user name and password
+      setUsername = "Abhishek Sardar";
+      setPassword = "12345"
 
-      if(user === "" || pass === ""){
-        alert("Please fill in both fields!");
-      } else {
-        alert("Username: " + user + "\nPassword: " + pass);
+      // if(user === setUsername || pass === setPassword){
+      //   alert("Please fill in both fields!");
+      // } else {
+      //   alert("Username: " + user + "\nPassword: " + pass);
+      // }
+      if(user === setUsername || pass === setPassword){
+        alert("Your are a admin")
+      }else{
+        alert("INCORRECT PASSWORD: YOU ARE NOT A ADMIN" );
       }
     }
   </script>
