@@ -1,126 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>quize game</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div class="quize-container">
-      <h2 id="question">Loading</h2>
-      <div id="answer-button"></div>
-      <button id="next-btn">NEXT</button>
-      <div id="result"></div>
-    </div>
-
-    <script>
-      const questions = [
-        {
-          question: "what does HTML stand for?",
-          answers: [
-            { text: "Hyper text markup language", correct: true },
-            { text: "Hyper text mark language", correct: false },
-            { text: "Hyper translate markup language", correct: false },
-            { text: "Hyper text make language", correct: false },
-          ],
-        },
-        {
-          question: "what language is used for styling?",
-          answers: [
-            { text: "HTML", correct: false },
-            { text: "css", correct: true },
-            { text: "js", correct: false },
-            { text: "python", correct: false },
-          ],
-        },
-        {
-          question: "what is the meaning of p?",
-          answers: [
-            { text: "passage", correct: false },
-            { text: "paragraph", correct: true },
-            { text: "pen drive", correct: false },
-            { text: "pentagon", correct: false },
-          ],
-        },
-      ];
-      const questionElements = document.getElementById("question");
-      const answerButtons = document.getElementById("answer-buttons");
-      const nextButtons = document.getElementById("next-btn");
-      const resultElement = document.getElementById("result");
-
-      let currentQuestionIndex = 0;
-      let score = 0;
-
-      function startQuiz() {
-        currentQuestionIndex = 0;
-        score = 0;
-        nextButtons.innerHTML = "Next";
-        resultElement.innerHTML = "";
-        showQuestion();
-      }
-      function showQuestion() {
-        resetState();
-        let currentQuestion = questions[currentQuestionIndex];
-        let questionNo = currentQuestion + 1;
-        questionElements.innerHTML =
-          questionNo + " ." + currentQuestion.question;
-
-        currentQuestion.answers.forEach((answer) => {
-          const button = document.createElement("button");
-          button.innerHTML = answer.text;
-          button.classList.add("btn");
-          answerButtons.appendChild(button);
-          button.addEventListener("click", () => selectAnswer(answer));
-        });
-      }
-
-      function resetState() {
-        nextButtons.style.display = "none";
-        while (answerButtons.firstChild) {
-          answerButtons.removeChild(answerButtons.firstChild);
-        }
-      }
-
-      function selectAnswer(answer) {
-        if (answer.correct) {
-          score++;
-        }
-        Array.from(answerButtons.children).forEach((button) => {
-          button.display = true;
-        });
-        nextButtons.style.display = "block";
-      }
-
-
-
-      function showResult(){
-        resetState();
-        questionElements.innerHTML = "Quiz completed!";
-        resultElement.innerHTML = `You scored ${score} out of ${questions.length}`;
-        nextButtons.innerHTML = "Play Again";
-        nextButtons.style.display = "block";
-      }
-
-      function handleNextButton(){
-        currentQuestionIndex++;
-        if(currentQuestionIndex < questions.length){
-          showQuestion();
-
-        }else{
-          showResult();
-        }
-      }
-
-      nextButtons.addEventListener("Click", () => {
-        if(currentQuestionIndex < questions.length){
-          handleNextButton();
-
-        }else{
-          startQuiz();
-        }
-      })
-      startQuiz();
-    </script>
-  </body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div class="login-box">
+    <h2>Login</h2>
+    <form >
+      UserName: <input type="text" placeholder="UserName"required>
+      Password: <input type="password" placeholder="Password" required>
+    </form>
+  </div>
+  
+  
+</body>
 </html>
